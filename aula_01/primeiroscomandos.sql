@@ -45,3 +45,5 @@ SELECT * FROM customers WHERE contact_name LIKE 'A%' ORDER BY contact_name ASC;
 SELECT * FROM customers WHERE contact_name NOT LIKE 'A%' ORDER BY contact_name ASC;
 
 SELECT * FROM customers WHERE country IN ('Germany', 'France', 'UK');
+
+SELECT * FROM customers WHERE country NOT IN ('Germany', 'France', 'UK');
