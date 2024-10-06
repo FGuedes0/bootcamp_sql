@@ -210,3 +210,24 @@ SELECT category_id, MIN(unit_price) AS preco_minimo
 FROM products
 GROUP BY category_id
 ORDER BY category_id ASC;
+
+
+-- Calcula o maior preço unitário de produtos em cada categoria
+SELECT category_id, MAX(unit_price) AS preco_maximo
+FROM products
+GROUP BY category_id;
+
+-- Conta o número total de produtos em cada categoria
+SELECT category_id, COUNT(*) AS total_de_produtos
+FROM products
+GROUP BY category_id;
+
+-- Calcula o preço médio unitário de produtos em cada categoria
+SELECT category_id, AVG(unit_price) AS preco_medio
+FROM products
+GROUP BY category_id;
+
+-- Calcula a quantidade total de produtos pedidos por pedido
+SELECT order_id, SUM(quantity) AS quantidade_total_por_pedido
+FROM order_details
+GROUP BY order_id;
