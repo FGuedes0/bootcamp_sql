@@ -1,1 +1,0 @@
-* materiais do bootcamp de SQL jorndada de dados
